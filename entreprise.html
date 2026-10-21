@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Entreprise – Safwen LACHHAB</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600&family=Literata:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top"><div class="bar">
+<a class="logo" href="index.html" aria-label="Safwen Lachhab, accueil">SL</a>
+<button class="burger" aria-expanded="false" aria-controls="menu">Menu</button>
+<nav id="menu" aria-label="Navigation principale">
+<a href="index.html">Accueil</a>
+<a href="entreprise.html" aria-current="page">Entreprise</a>
+<a href="ap.html">AP</a>
+<a href="ts.html">TS</a>
+<a href="veille.html">Veille</a>
+<a href="contact.html">Contact</a>
+<a class="cv" href="docs/cv.pdf" download>Télécharger mon CV</a>
+</nav></div></header>
+<main>
+<h1>Entreprise : stage de 1re année</h1>
+<p class="lead">Stage de première année de BTS SIO option SISR à IRIS Mediaschool (Nice), à temps plein, du 27 juillet au 21 août 2026 (4 semaines).</p>
+<h2>Contexte</h2>
+<p>L’école souhaite mettre en place une nouvelle infrastructure serveur sécurisée pour répondre aux besoins des enseignants, du personnel administratif et des étudiants : authentification, gestion des droits, base de données, hébergement web et stockage.</p>
+<h2>Ma mission</h2>
+<p>Concevoir et justifier une solution complète, puis la valider sur une maquette virtuelle personnelle. En accord avec ma référente, je n’ai pas touché au système en production : j’ai observé l’existant, relevé des informations sur le terrain et proposé des solutions.</p>
+<h2>Déroulé du stage</h2>
+<ol><li><strong>Pré-projet</strong> : planification, analyse du besoin et des risques, plan de continuité et de reprise d’activité (sauvegarde 3-2-1).</li>
+<li><strong>Choix de solution</strong> : comparaison Windows Server et Linux Server, sécurité réseau, base de données, hébergement web.</li>
+<li><strong>Mise en place</strong> : maquette Active Directory, comptes à trois niveaux de droits, répertoires personnels et partagés, supervision.</li>
+<li><strong>Budget et documentation</strong> : trois scénarios de budget (bas, moyen, haut) avec préconisation justifiée.</li>
+<li><strong>Inventaire</strong> : relevé des postes de l’administration et du matériel entreposé.</li></ol>
+<h2>Environnement technique</h2>
+<ul><li>Maquette : Ubuntu avec Samba AD DC, configuré avec <code>samba-tool</code></li><li>Solution préconisée : Windows Server, Active Directory, SQL Server Express, IIS</li><li>Supervision envisagée : outils natifs de Windows, puis Zabbix ou PRTG</li></ul>
+<h2>Réalisations liées</h2>
+<p><a href="ap.html#realisation-1">Maquette Active Directory</a> et <a href="ap.html#realisation-2">Inventaire du matériel</a>.</p>
+</main>
+<footer>Portfolio BTS SIO option SISR – session 2027 – Safwen LACHHAB<!-- À MODIFIER : ajouter le n° de candidat si demandé --></footer>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Activités professionnelles – Safwen LACHHAB</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600&family=Literata:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top"><div class="bar">
+<a class="logo" href="index.html" aria-label="Safwen Lachhab, accueil">SL</a>
+<button class="burger" aria-expanded="false" aria-controls="menu">Menu</button>
+<nav id="menu" aria-label="Navigation principale">
+<a href="index.html">Accueil</a>
+<a href="entreprise.html">Entreprise</a>
+<a href="ap.html" aria-current="page">AP</a>
+<a href="ts.html">TS</a>
+<a href="veille.html">Veille</a>
+<a href="contact.html">Contact</a>
+<a class="cv" href="docs/cv.pdf" download>Télécharger mon CV</a>
+</nav></div></header>
+<main>
+<h1>Activités professionnelles</h1>
+<p class="lead">Mes deux réalisations du stage de 1re année de BTS SIO SISR, à IRIS Mediaschool.</p>
+<p class="sommaire"><a href="#realisation-1">Maquette Active Directory</a><a href="#realisation-2">Inventaire du matériel</a></p>
+<section class="bloc" id="realisation-1">
+<h2>Réalisation 1 : mise en place d’un annuaire Active Directory sur maquette virtuelle</h2>
+<h3>Contexte</h3><p>Stage du 27 juillet 2026, 4 semaines, à IRIS Mediaschool. L’école prépare une infrastructure serveur sécurisée pour trois publics : élèves, intervenants et personnel administratif.</p>
+<h3>Objectif</h3><p>Prouver sur une maquette qu’une organisation des comptes par rôle est réalisable, sans toucher à la production.</p>
+<h3>Environnement technique</h3>
+<ul><li>Système : Ubuntu en machine virtuelle</li><li>Annuaire : contrôleur de domaine Samba AD DC (domaine <code>iris.local</code>)</li><li>Outil : <code>samba-tool</code></li></ul>
+<h3>Étapes</h3><ol><li>Création du domaine et des unités d’organisation : Administration, Enseignants, Élèves.</li><li>Création de trois comptes de test, un par niveau de droits : administrateur, super-utilisateur, utilisateur.</li><li>Rattachement de chaque compte à son unité d’organisation et vérification avec la liste des utilisateurs.</li></ol>
+<h3>Résultat et analyse</h3><p>La maquette sert de preuve de concept. Le rapport préconise Windows Server pour l’intégration native avec Active Directory, alors que la maquette tourne sous Samba : j’ai choisi Ubuntu avec Multipass, plus léger à installer sur mon Mac qu’un Windows Server. L’automatisation des comptes par script PowerShell est proposée, pas encore réalisée.</p>
+<!-- À AJOUTER : lien vers une procédure PDF anonymisée -->
+</section>
+<section class="bloc" id="realisation-2">
+<h2>Réalisation 2 : inventaire des postes et du matériel</h2>
+<h3>Contexte</h3><p>Même stage. Le périmètre a été précisé par ma référente : uniquement les postes de l’administration et le matériel entreposé.</p>
+<h3>Objectif</h3><p>Recenser le parc existant pour cadrer le besoin réel avant de dimensionner la solution.</p>
+<h3>Étapes</h3><ol><li>Relevé, pour chaque poste d’administration : utilisateur, adresse IP, configuration réseau, imprimante associée.</li><li>Documentation de la baie réseau.</li><li>Inventaire du matériel entreposé.</li><li>Estimation du besoin en écrans supplémentaires pour les postes étudiants, à partir des effectifs par formation.</li></ol>
+<h3>Résultat et analyse</h3><p>4 postes d’administration sur 8 relevés. Les 4 autres et le décompte du matériel stocké n’ont pas pu être terminés dans le temps du stage : c’est une suite à donner lors d’un prochain passage.</p>
+</section>
+</main>
+<footer>Portfolio BTS SIO option SISR – session 2027 – Safwen LACHHAB<!-- À MODIFIER : ajouter le n° de candidat si demandé --></footer>
+<script src="script.js"></script>
+</body>
+</html>

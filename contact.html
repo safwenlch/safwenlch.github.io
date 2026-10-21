@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact – Safwen LACHHAB</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600&family=Literata:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top"><div class="bar">
+<a class="logo" href="index.html" aria-label="Safwen Lachhab, accueil">SL</a>
+<button class="burger" aria-expanded="false" aria-controls="menu">Menu</button>
+<nav id="menu" aria-label="Navigation principale">
+<a href="index.html">Accueil</a>
+<a href="entreprise.html">Entreprise</a>
+<a href="ap.html">AP</a>
+<a href="ts.html">TS</a>
+<a href="veille.html">Veille</a>
+<a href="contact.html" aria-current="page">Contact</a>
+<a class="cv" href="docs/cv.pdf" download>Télécharger mon CV</a>
+</nav></div></header>
+<main>
+<h1>Contact</h1>
+<p class="lead">Écris-moi : le message arrive directement dans ma boîte mail.</p>
+<form id="contact" novalidate>
+<input type="hidden" name="access_key" value="5d6b4967-ea6b-4151-acdc-26d9016ea0ee">
+<input type="hidden" name="subject" value="Message depuis mon portfolio">
+<input type="checkbox" name="botcheck" class="trap" tabindex="-1" autocomplete="off">
+<p><label for="prenom">Prénom</label><input id="prenom" name="name" type="text" autocomplete="given-name" required aria-describedby="e-prenom"><small class="err" id="e-prenom"></small></p>
+<p><label for="email">Adresse e-mail</label><input id="email" name="email" type="email" autocomplete="email" required aria-describedby="e-email"><small class="err" id="e-email"></small></p>
+<p><label for="tel">Téléphone (facultatif)</label><input id="tel" name="phone" type="tel" autocomplete="tel" aria-describedby="e-tel"><small class="err" id="e-tel"></small></p>
+<p><label for="msg">Message</label><textarea id="msg" name="message" rows="6" required aria-describedby="e-msg"></textarea><small class="err" id="e-msg"></small></p>
+<button class="btn solid" type="submit">Envoyer le message</button>
+<p id="statut" role="status"></p>
+</form>
+<h2>Autres liens</h2>
+<ul><li>LinkedIn : <a href="https://www.linkedin.com/in/safwen-lachhab-201304335" target="_blank" rel="noopener">safwen-lachhab</a></li><li>GitHub : <a href="https://github.com/safwenlch" target="_blank" rel="noopener">safwenlch</a></li></ul>
+</main>
+<footer>Portfolio BTS SIO option SISR – session 2027 – Safwen LACHHAB<!-- À MODIFIER : ajouter le n° de candidat si demandé --></footer>
+<script src="script.js"></script>
+</body>
+</html>
